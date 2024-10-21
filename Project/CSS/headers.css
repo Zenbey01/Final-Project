@@ -1,0 +1,37 @@
+
+.py-3 {
+  display: flex;
+  justify-content: center; /* จัดให้เนื้อหาตรงกลางแนวนอน */
+  align-items: center; /* จัดให้เนื้อหาตรงกลางแนวตั้ง */
+  position: relative;
+  overflow: hidden;
+  background-color: #74503D;
+  height:40px;
+  font-family: 'Prompt';
+}
+
+.nav-pills a {
+  font-family: Sriracha, cursive;
+  color: #ddd;
+  padding: 14px 16px;
+  
+}
+
+.nav-pills a:hover {
+  font-family: Sriracha, cursive;
+  background-color: #ddd;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-pills a {
+    padding: 10px 12px; /* ปรับขนาด padding เมื่อหน้าจอเล็กกว่า */
+  }
+}
+
+/* CSS สำหรับหน้าจอที่มีความกว้างมากกว่า 600px */
+@media screen and (min-width: 601px) {
+  .nav-pills a {
+    padding: 14px 16px; /* คืนค่า padding เป็นค่าเริ่มต้นเมื่อหน้าจอกว้างขึ้น */
+  }
+}

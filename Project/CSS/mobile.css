@@ -1,0 +1,54 @@
+/* Common button styles */
+.button, .buttonaddplace, .buttonaddplace-two, .buttonaddplace, .back-to-top, .btnNextgo-on {
+    background-color: #927A59;
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.button:hover, .buttonaddplace:hover, .buttonaddplace-two:hover, .back-to-top:hover, .btnNextgo-on:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Additional styling for specific buttons */
+.buttonaddplace-two {
+    padding: 15px 30px; /* Adjust as needed */
+}
+
+.buttonaddplace {
+    padding: 15px 30px; /* Adjust as needed */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+    .button, .buttonaddplace, .buttonaddplace-two, .buttonaddplace, .back-to-top, .btnNextgo-on {
+        padding: 12px; /* Adjust as needed for smaller screens */
+    }
+
+    .cancelbtn, .deletebtn {
+        width: 100%; /* ทำให้ปุ่มเต็มความกว้าง */
+        margin: 8px 0; /* เพิ่มช่องว่างระหว่างปุ่ม */
+    }
+}
+
+.clearfix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Change styles for cancel button and delete button on small screens */
+@media screen and (max-width: 600px) {
+    .cancelbtn, .deletebtn {
+        width: 100%; /* ทำให้ปุ่มเต็มความกว้าง */
+        margin: 8px 0; /* เพิ่มช่องว่างระหว่างปุ่ม */
+    }
+}

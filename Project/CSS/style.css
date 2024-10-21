@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    background-color: #dbcbbb;
+    font-family: Arial, Helvetica, sans-serif, prompt;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.textasiatiqe {
+  font-family: Sriracha, cursive;
+  line-height: 3; /* ลดระยะห่างระหว่างบรรทัด */
+  text-align: center;
+  font-size: 20px; /* ปรับขนาดตัวอักษร */
+
+  /* เพิ่ม CSS Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+  @media only screen and (max-width: 600px) {
+    font-size: 16px; /* ปรับขนาดตัวอักษรในกรณีขนาดจอเล็ก */
+  }
+}
+
+
+.item {
+    padding: 3rem;
+    border: 1px solid #ccc;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .map-asiatique {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* ปรับระยะห่างตามที่ต้องการ */
+  }
+  
+  /* เพิ่ม CSS Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+  @media only screen and (max-width: 600px) {
+    .map-asiatique {
+      flex-direction: column; /* เปลี่ยนเป็นการแสดงผลแนวตั้ง */
+      align-items: center;
+    }
+  
+    .map-asiatique .left-image,
+    .map-asiatique .right-boxes {
+      width: 100%; /* ทำให้กล่องย่อยเต็มความกว้างของหน้าจอ */
+    }
+  }
+  
+  
+
+  .left-image {
+    width: 650px; /* ปรับขนาดของภาพตามที่ต้องการ */
+    height: auto;
+  }
+  
+  /* เพิ่ม CSS Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+  @media only screen and (max-width: 600px) {
+    .left-image {
+      width: 100%; /* ทำให้ภาพเต็มความกว้างของหน้าจอ */
+    }
+  }
+  
+
+  .YESYES-image {
+    width: 300px; /* ปรับขนาดของภาพตามที่ต้องการ */
+    height: auto;
+    margin: 16px;
+    
+  }
+  .right-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* จัดกล่องให้อยู่ตรงกลางแนวแกนตั้ง */
+    margin: 20px; /* ปรับระยะห่างระหว่างภาพและกล่อง */
+    align-items: center;
+    text-align: center;
+  }
+  
+  .right-boxes .box {
+    font-family: Sriracha, cursive;
+    font-weight: normal;
+  }
+  
+  /* เพิ่ม CSS Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+  @media only screen and (max-width: 600px) {
+    .right-boxes {
+      margin: 10px; /* ลดระยะห่างในกรณีขนาดจอเล็ก */
+    }
+  }
+  
+  
+  
+  .box {
+    width: 305px; /* ปรับขนาดกล่องตามที่ต้องการ */
+    /*height: 100px; /* ปรับขนาดกล่องตามที่ต้องการ */
+    flex: 1 1 12.2rem;
+    border: 3px solid #3D3325;
+  }
+  
+  /* ปรับสีและสไตล์ของกล่องแต่ละอัน */
+  .box1 {
+    background-color: #fff; /* เปลี่ยนสีพื้นหลังของกล่องที่ 1 */
+    border: 3px solid #333; /* เพิ่มขอบของกล่อง */
+    border-radius: 16px; /* เพิ่มขอบโค้งให้กับกล่องที่ 1 */
+    text-align: center;
+  }
+
+  .box1 h3 {
+    font-family: Sriracha, cursive;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #ffffff; /* เพิ่มสีของตัวอักษรเป็นสีขาว */
+    background: #927A59;
+    border-radius: 13px 13px 0px 0px;
+    line-height: 2;
+    padding: 5px 0;
+}
+
+  
+  .box2 {
+    
+    background-color: #fff; /* เปลี่ยนสีพื้นหลังของกล่องที่ 2 */
+    border: 3px solid #333; /* เพิ่มขอบของกล่อง */
+    border-radius: 16px; /* เพิ่มขอบโค้งให้กับกล่องที่ 1 */
+    text-align: center;
+  }
+
+  .box2 h3 {
+    font-family: Sriracha, cursive;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #ffffff; /* เพิ่มสีของตัวอักษรเป็นสีขาว */
+    background: #927A59;
+    border-radius: 13px 13px 0px 0px;
+    line-height: 2;
+    padding: 5px 0;
+  }
+  
+  select {
+    width: 80%;
+    padding: 16px 20px;
+    border-radius: 16px 16px 16px 16px;
+    background-color: #f1f1f1;
+    line-height: 2;
+    border: 1px solid #3D3325;
+    /* text-align: center; */
+  }
+
+  .textreview,
+.textreview-css,
+.textreview-finish {
+  font-family: 'Prompt';
+  text-align: center;
+  font-size: 24px; /* ปรับขนาดตัวอักษรให้เหมาะสมกับหน้าจอโทรศัพท์ */
+  margin: 8px 2px; /* ปรับระยะห่างของข้อความ */
+}
+
+.textreview {
+  line-height: 2; /* ปรับระยะห่างระหว่างบรรทัด */
+}
+
+.textreview-css {
+  line-height: 1.5; /* ปรับระยะห่างระหว่างบรรทัด */
+}
+
+/* ตัวอย่าง CSS Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .textreview,
+  .textreview-css,
+  .textreview-finish {
+    font-size: 18px; /* ปรับขนาดตัวอักษรในกรณีจอเล็ก */
+    margin: 6px 2px; /* ปรับระยะห่างของข้อความในกรณีจอเล็ก */
+  }
+}
+
+  
+.rating-css {
+  padding: 20px;
+}
+
+.rating-css input:checked + label ~ label {
+  color: #838383;
+}
+
+
+
+.rating-css div {
+  color: #ffe400;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.rating-css input {
+  display: none;
+}
+
+.rating-css input + label {
+  font-size: 36px;
+  text-shadow: 1px 1px 0 #ffe400;
+  cursor: pointer;
+  margin-right: 5px; /* เพิ่มระยะห่างระหว่างดาว */
+}
+
+.rating-css label:active {
+  transform: scale(0.8);
+  transition: 0.3s ease;
+}
+
+
+
+
+  .text-h3 {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    margin: 16px;
+  }
+    .gallery-item {
+      text-align: center;
+  }
+
+  .gallery-image {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .linkmap {
+    text-align: center;
+    margin-top: 10px; /* เพิ่มระยะห่างด้านบน */
+}
+
+.linkmap a {
+    font-size: 80%;
+    color: inherit;
+    text-decoration: none;
+    background-color: #4CAF50; /* เปลี่ยนสีพื้นหลัง */
+    padding: 10px 20px; /* เพิ่มช่องว่างขอบ */
+    border-radius: 5px; /* ทำเส้นขอบเรียบ */
+    transition: background-color 0.3s ease; /* เพิ่มการเปลี่ยนสีเบื้องหลังเมื่อโฮเวอร์ */
+}
+
+.linkmap a:hover {
+    background-color: #45a049; /* เปลี่ยนสีพื้นหลังเมื่อโฮเวอร์ */
+}
+
+  .container-qq {
+    display: flex;
+    gap: 3rem;
+    padding: 16px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-qqq {
+    width: 600px; /* กำหนดความกว้าง */
+    height: 800px; /* กำหนดความสูง */
+    max-width: 100%; /* จำกัดความกว้างสูงสุดให้เท่ากับขนาดของ parent element */
+    max-height: 100%; /* จำกัดความสูงสูงสุดให้เท่ากับขนาดของ parent element */
+    margin: auto; /* ทำให้ container-qq อยู่ตรงกลางของหน้าจอ */
+    overflow: hidden; /* ทำให้เนื้อหาที่มีขนาดเกิน container ไม่แสดงผลออกนอก container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  
+  footer {
+    background: #74503D;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .container-qq {
+    display: flex;
+    gap: 3rem;
+    padding: 16px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-qqq {
+    width: 600px; /* กำหนดความกว้าง */
+    height: 800px; /* กำหนดความสูง */
+    max-width: 100%; /* จำกัดความกว้างสูงสุดให้เท่ากับขนาดของ parent element */
+    max-height: 100%; /* จำกัดความสูงสูงสุดให้เท่ากับขนาดของ parent element */
+    margin: auto; /* ทำให้ container-qq อยู่ตรงกลางของหน้าจอ */
+    overflow: hidden; /* ทำให้เนื้อหาที่มีขนาดเกิน container ไม่แสดงผลออกนอก container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .linkButton {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid #000000;
+      color: #ffffff;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+  }
+  
+  .linkButton:hover {
+      background-color: #3498db;
+      color: #ffffff;
+  }
+  .btnDownload {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btnDownload:hover {
+    background-color: #45a049;
+}
+
+.button-text {
+    pointer-events: none; /* ไม่ให้ปุ่มสามารถถูกคลิกได้เลย */
+}
+.container-fluid
+{
+  background-color: #f1f1f1;
+}
+
+
+  

@@ -1,0 +1,275 @@
+
+.buttonaddplace {
+    background-color: #927A59;;
+    border: none;
+    color: black;
+    padding: 15px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  .buttonaddplace:hover {
+    background-color: #f1b05a;
+    color: white;
+  }
+
+  .buttonaddplace-two {
+    background-color: #927A59;;
+    border: none;
+    color: black;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  .buttonaddplace-two:hover {
+    background-color: #f1b05a;
+    color: white;
+  }
+
+.button {
+  
+    background-color: #927A59;;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 78px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  .button:hover {
+    background-color: #333;
+    color: white;
+  }
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.back-to-top {
+  color: #fff;
+  font-size: 3rem;
+  transition: 0.2 ease-out;
+}
+
+.back-to-top:hover {
+  background-color: #927A59;
+}
+.back-to-top:hover span {
+  transform: translateY(-4px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.clearfix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #927A59;
+  border: none;
+  color: black;
+  padding: 14px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.cancelbtn:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #927A59;
+  border: none;
+  padding: 23px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.deletebtn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.btnNextgo-on {
+  background-color: #927A59;
+  border: none;
+  padding: 15px 40px; /* ปรับขนาด padding ให้เหมาะสมกับจอโทรศัพท์ */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 24px; /* ปรับขนาดตัวอักษรให้เหมาะสมกับจอโทรศัพท์ */
+
+  /* เพิ่ม CSS Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+  @media only screen and (max-width: 600px) {
+    padding: 12px 30px; /* ปรับขนาด padding ในกรณีจอเล็ก */
+    font-size: 18px; /* ปรับขนาดตัวอักษรในกรณีจอเล็ก */
+  }
+}
+
+.btnNextgo-on:hover {
+  background-color: #333;
+  color: white;
+}
+
+
+/* Add padding and center-align text to the container */
+.container-qq {
+  display: flex;
+  gap: 3rem;
+  padding: 16px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-qqq {
+  width: 600px; /* กำหนดความกว้าง */
+  height: 800px; /* กำหนดความสูง */
+  max-width: 100%; /* จำกัดความกว้างสูงสุดให้เท่ากับขนาดของ parent element */
+  max-height: 100%; /* จำกัดความสูงสูงสุดให้เท่ากับขนาดของ parent element */
+  margin: auto; /* ทำให้ container-qq อยู่ตรงกลางของหน้าจอ */
+  overflow: hidden; /* ทำให้เนื้อหาที่มีขนาดเกิน container ไม่แสดงผลออกนอก container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(179, 179, 179, 0.9);
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content-star {
+  background-color: #fefefe;
+  margin: 10% auto; /* ปรับระยะขอบจากด้านบน และกำหนดให้เลื่อนไปที่กลางจอตามแนวดิ่ง */
+  border: 1px solid #888;
+  width: 90%; /* ปรับขนาดกว้างของ modal */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ตัวอย่าง CSS Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .modal-content-star {
+    width: 95%; /* ปรับขนาดกว้างของ modal ในกรณีจอโทรศัพท์ */
+  }
+}
+
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 105px; /* ปรับตำแหน่งของปุ่มไปทางขวา */
+  top: 230px; /* ปรับตำแหน่งของปุ่มไปทางบน */
+  font-size: 50px; /* ปรับขนาดตัวอักษร */
+  font-weight: bold;
+  color: #927A59;
+}
+
+/* เพิ่ม CSS Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .close {
+    right: 30px; /* ปรับตำแหน่งของปุ่มไปทางขวาในกรณีจอเล็ก */
+    top: 100px; /* ปรับตำแหน่งของปุ่มไปทางบนในกรณีจอเล็ก */
+    font-size: 45px; /* ปรับขนาดตัวอักษรในกรณีจอเล็ก */
+  }
+}
+
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,290 @@
+.center-image {
+    width: 1000px; /* ปรับขนาดของภาพตามที่ต้องการ */
+    height: 500px;
+    background: url(Photo/aboutpicture.jpg);
+    border-radius: 54px;
+}
+
+/* Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    .center-image {
+        width: 100%; /* ทำให้ขนาดเต็ม width ของหน้าจอเล็ก */
+        height: auto; /* ทำให้สูงเป็นอัตราส่วนตามกว้าง */
+        border-radius: 0; /* ลบการใช้ border-radius ในหน้าจอเล็ก */
+    }
+}
+
+
+
+
+.map-asiatique-about {
+    /* gap: 5rem; */ /* ลบออกเนื่องจากไม่ต้องการกำหนด gap แบบคงที่ */
+  }
+  
+  /* Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+  @media only screen and (max-width: 600px) {
+    .map-asiatique-about {
+      gap: 1rem; /* ปรับระยะห่างตามที่ต้องการในหน้าจอขนาดเล็ก */
+    }
+  }
+  
+
+  .map-asiatique-all {
+    display: flex;
+    align-items: center;
+    overflow-x: auto; /* ให้สามารถเลื่อนดูรูปภาพได้ */
+    gap: 1rem;
+    padding: 0 20px; /* ปรับระยะห่างและ Padding ตามที่ต้องการ */
+}
+
+.all-image {
+    width: 25%; /* ความกว้างในคอมพิวเตอร์ */
+    height: auto; /* จัดให้รูปภาพปรับตามสัดส่วน */
+
+    /* Media Query สำหรับโทรศัพย์ (max-width: 600px) */
+    @media only screen and (max-width: 600px) {
+        width: 100%; /* ทำให้รูปภาพเต็มความกว้างของหน้าจอโทรศัพย์ */
+    }
+}
+
+
+.slider {
+    display: flex;
+    gap: 1rem; /* ระยะห่างระหว่างรูปภาพ */
+}
+
+
+.textabout {
+    font-family: Sriracha, cursive;
+    line-height: 3;
+    text-align: center;
+    font-size: 25px;
+    margin: px;
+    color: #4d3228;
+}
+
+/* Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    .textabout {
+        font-size: 18px; /* ปรับขนาดตัวอักษรในหน้าจอขนาดเล็ก */
+    }
+}
+
+
+
+.textasiatiqeabout {
+    font-family: Sriracha, cursive;    
+    font-weight: 100;
+    line-height: 2;
+    color: #4d3228;
+    text-align: center;
+    font-size: 2rem; /* ปรับขนาดตามที่ต้องการ */
+  
+    /* Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+    @media only screen and (max-width: 600px) {
+      font-size: 1.2rem; /* ปรับขนาดตามที่ต้องการในหน้าจอขนาดเล็ก */
+    }
+  }
+  
+
+.textloacation-7 {
+    font-family: Sriracha, cursive;   
+    text-align: center;
+    font-size: 25px;
+    margin: 16px;
+    color: #4d3228;
+}
+
+.text-h2 {
+    font-family: Sriracha, cursive;    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+}
+
+.container-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+  .container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+    @media only screen and (max-width: 600px) {
+      flex-direction: column; /* สลับเป็นการแสดงแนวตั้ง */
+    }
+  }
+  
+
+.flex-zero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+/* Media Query สำหรับหน้าจอขนาดเล็ก (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column; /* สลับเป็นการแสดงแนวตั้ง */
+    }
+}
+
+
+.image-picture {
+    flex: 1;
+    /* margin-right: 20px; */
+}
+
+.ss {
+    width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+.sss {
+    width: 500px;
+    height: 375px;
+    display: block;
+    border-radius: 30px;
+}
+
+.imageandtaxt {
+    text-align: center;
+    font-family: 'Prompt';
+}
+
+.imageandtaxt p {
+    font-family: Sriracha, cursive;
+    color: var(--light-color);
+    margin: 2px;
+}
+
+.imageandtaxt h3 {
+    font-family: Sriracha, cursive;
+    color: #4d3228;
+    margin: 16px;
+    font-size: 25px;
+}
+
+.locationpicturezero {
+    padding: 15px 60px;
+    border-radius: 16px;
+    background-color: #ceb588; /* Change to orange color */
+    color: rgb(255, 238, 0);
+    cursor: pointer;
+    margin: 15px 58px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border: 3px solid #474040;
+}
+
+
+
+.imageandtaxtzero {
+    text-align: center;
+    font-family: 'Prompt';
+}
+
+
+.imageandtaxtzero h6 {
+    color: black;
+    font-size: 17px;
+    margin: 1px;
+}
+
+.textasiatiqezero {
+    font-family: 'Prompt';
+    text-align: center;
+    font-size: 30px;
+}
+
+.shit-bug {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 2px;
+  }
+
+.image-bug {
+    width: 50px;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+.shit-boat {
+    margin-left: 5vw; /* ปรับค่า margin-left ให้เป็นเปอร์เซ็นต์ของความกว้างของหน้าจอ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw; /* ปรับค่า gap ให้เป็นเปอร์เซ็นต์ของความกว้างของหน้าจอ */
+}
+
+  
+
+.image-boat {
+    width: 30px;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+    margin: 2px;
+}
+
+
+
+
+.abouttoall {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.member-list {
+    font-family: Sriracha, cursive;
+        /* line-height: 4; */
+    
+    font-size: 20px;
+    margin: 16px;
+    color: #000000;
+}
+
+.member-zero p {
+    font-family: Sriracha, cursive;
+        margin: 2px;
+}
+
+
+
+.contacted {
+    font-family: Sriracha, cursive;
+        /* line-height: 4; */
+    
+    font-size: 20px;
+    margin: 16px;
+    color: #000000;
+}
+
+.contacted-zero p {
+    font-family: Sriracha, cursive;
+        margin: 2px;
+}
